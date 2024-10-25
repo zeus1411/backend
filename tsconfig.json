@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "ES2022",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@interfaces/*": [
+        "./interfaces/*"
+      ],
+      "@tests/*": [
+        "./tests/*"
+      ],
+      "@src/*": [
+        "./src/*"
+      ],
+      "@models/*": [
+        "./src/models/*"
+      ],
+      "@controllers/*": [
+        "./src/controllers/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ]
+    },
+    "types": [
+      "jest",
+      "node"
+    ],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true
+  },
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  }
+}
